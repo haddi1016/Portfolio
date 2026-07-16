@@ -13,30 +13,215 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
 
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            background-color: blue;
+            background-color: rgb(1, 1, 31);
             color: white;
             font-family: 'Roboto Condensed', sans-serif;
         }
-    </style>
 
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            
+            /* Glassmorphism Effect */
+            background-color: rgba(1, 6, 40, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            
+            /* Shapes and Positioning */
+            border-radius: 80px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        .left {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        main {
+            padding-top: 80px; /* Adjusted to account for floating nav */
+        }
+
+        .firstsection {
+            display: flex;
+            height: 90vh;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+        .rightsection {
+            width: 50%;
+        }
+
+        .rightsection img {
+            width: 300px;
+            height: 350px;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: rgb(170, 107, 228);
+            font-weight: bold;
+        }
+
+        .homeb {
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .homeb:hover {
+            background-color: rgb(170, 107, 228);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(170, 107, 228, 0.3);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+            font-weight: bold;
+        }
+
+        .secondsection {
+            margin: 50px 34px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .fade-in-element {
+            opacity: 0;
+            transition: opacity 2s ease-out;
+        }
+
+        .fade-in-element.is-visible {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">
-
-            </div>
+            <div class="left">Haddi's Portfolio</div>
             <div class="right">
-
+                <ul>
+                    <li><a href="#home"><button type="button" class="homeb">Home</button></a></li>
+                    <li><a href="#about"><button type="button" class="homeb">About</button></a></li>
+                    <li><a href="#projects"><button type="button" class="homeb">Projects</button></a></li>
+                    <li><a href="#contact"><button type="button" class="homeb">Contact</button></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <p>Welcome to my portfolio!</p>
 
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi! I am <span class="name">Haddi</span>
+                <br><br>
+                I am a passionate <span class="name">Web Developer</span>
+                <br><br>
+                Welcome to my Portfolio where you can explore my projects and learn more about my skills and experience in
+                <br>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection" >
+                <img src="Screenshot (120).png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <section class="secondsection" id="about">
+            <hr style="border: 2px solid #f2f3f3; margin:40px">
+            <p class="fade-in-element" style="font-weight: normal; font-size: 25px; color:gray">&nbsp;What I Have done so far</p>
+            <h1  class="fade-in-element">Qualification</h1>
+            <br>
+            <h2 align="center" class="fade-in-element"><u>Education</u></h2>
+            <h3 class="fade-in-element"><u>Matriculation</u></h3>
+            <p class="fade-in-element" style="font-weight: normal; font-size: 20px; font-family: Arial, sans-serif;">
+                <b>Matriculation (Computer Science) <br> 840/1100 Marks (First Division)</b><br><br>
+                Islamabad Lyceum High School<br>
+                Successfully completed matriculation in the first attempt, demonstrating strong academic commitment and a solid foundation in core subjects.
+            </p>
+            <br>
+            <h3 class="fade-in-element"><u>Intermediate</u></h3>
+            <p class="fade-in-element" style="font-weight: normal; font-size: 20px; font-family: Arial, sans-serif;">
+                <b>Intermediate (Computer Science) <br> 700/1100 Marks (First Division)</b><br><br>
+                Punjab Group Of Colleges (PGC)<br>
+                Successfully completed intermediate in the first attempt, demonstrating strong academic commitment and a solid foundation in core subjects.
+            </p>
+            <br>
+            <h3 class="fade-in-element"><u>Bachelor of Science in Computer Science (BSCS)</u></h3>
+            <p class="fade-in-element" style="font-weight: normal; font-size: 20px; font-family: Arial, sans-serif;">
+                Currently pursuing an undergraduate degree in Computer Science at Iqra University, Islamabad, having successfully completed three semesters. Building a comprehensive foundation in software development, logical design, and networking principles.
+            </p>
+            <br>
+            <h2 style="font-family: 'Roboto Condensed', sans-serif;" align="center" class="fade-in-element"><u>Experience</u></h2>
+        </section>
+        <br>
+        <h3 class="fade-in-element">CSR Agent</h3>
+        <p class="fade-in-element">Worked as a CSR Agent, providing excellent customer service and resolving client inquiries efficiently.</p>
+
+        <section id="projects" style="height: 50vh;"></section>
+        <section id="contact" style="height: 50vh;"></section>
+    </main>
+
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-element').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Development.', ' Videography.', ' Photography.', ' Content Creation.'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
