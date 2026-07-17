@@ -9,7 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head> 
     <style>
+.instagram-link {
+            font-size: 100px; /* Adjust size */
+            color: #E1306C;  /* Instagram brand color */
+            text-decoration: none;
+            margin-left: 231px; /* Space from the left */
+            text-align: center;
+           
+        }
+        .instagram-link:hover {
+            opacity: 0.7;
+            color:white;
+        }
+.github-link {
+            font-size: 100px; 
+            color: #333; /* Classic GitHub dark gray */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-left: 370px; /* Space from the left */
+        }
+        .github-link:hover {
+            color: #f6f1f1; /* Turns black on hover */
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -113,12 +139,12 @@
             box-shadow: 0 4px 10px rgba(170, 107, 228, 0.3);
         }
 
-.homeb.active {
-    background-color: rgb(170, 107, 228);
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(170, 107, 228, 0.3);
-}
+        .homeb.active {
+            background-color: rgb(170, 107, 228);
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(170, 107, 228, 0.3);
+        }
 
 
         #element {
@@ -164,95 +190,123 @@
         }
 
         .glass-button1 {
-    /* Large Square Size */
-    width: 300px;
-    height: 200px;
-    margin: 120px;
-    
-    /* Rounded Corners */
-    border-radius: 30px; 
-    
-    /* Translucent/Glassmorphism Effect */
-    background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
-    backdrop-filter: blur(15px);          /* Blurs what's behind the button */
-    -webkit-backdrop-filter: blur(15px);  /* For Safari support */
-    
-    /* Border to make the edge pop */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    
-    /* Layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
+            /* Large Square Size */
+            width: 300px;
+            height: 200px;
+            margin: 120px;
+
+            /* Rounded Corners */
+            border-radius: 30px;
+
+            /* Translucent/Glassmorphism Effect */
+            background: rgba(255, 255, 255, 0.1);
+            /* White with 10% opacity */
+            backdrop-filter: blur(15px);
+            /* Blurs what's behind the button */
+            -webkit-backdrop-filter: blur(15px);
+            /* For Safari support */
+
+            /* Border to make the edge pop */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            /* Layout */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+
+            /* Smooth transition for interaction */
+            transition: all 0.3s ease;
+        }
+
+        /* Add a nice hover effect */
+        .glass-button1:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            font-weight: bold;
+            font-size: 52px;
+            color: rgb(170, 107, 228);
+        }
+
+        .glass-button2 {
+            /* Large Square Size */
+            width: 300px;
+            height: 200px;
+            margin: 120px;
+
+            /* Rounded Corners */
+            border-radius: 30px;
+
+            /* Translucent/Glassmorphism Effect */
+            background: rgba(255, 255, 255, 0.1);
+            /* White with 10% opacity */
+            backdrop-filter: blur(15px);
+            /* Blurs what's behind the button */
+            -webkit-backdrop-filter: blur(15px);
+            /* For Safari support */
+
+            /* Border to make the edge pop */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            /* Layout */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+
+            /* Smooth transition for interaction */
+            transition: all 0.3s ease;
+        }
+
+        /* Add a nice hover effect */
+        .glass-button2:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            font-weight: bold;
+            font-size: 52px;
+            color: rgb(170, 107, 228);
+        }
+
+        .projectbuttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: -10px;
+        }
+        .social-icon.facebook { 
+            color: #1877F2;
+            font-size: 100px;
+            margin-left: 350px; /* Space from the left */
+        }
+
+
+.social-icon.facebook:hover { color: #f3f4f5; }
+        
+.topbutton{
     font-size: 20px;
+    background-color: rgb(3, 103, 20);
     font-weight: bold;
-    
-    /* Smooth transition for interaction */
-    transition: all 0.3s ease;
-}
-
-/* Add a nice hover effect */
-.glass-button1:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-    font-weight: bold;
-    font-size: 52px;
-    color: rgb(170, 107, 228);
-}
- .glass-button2 {
-    /* Large Square Size */
-    width: 300px;
-    height: 200px;
-    margin: 120px;
-    
-    /* Rounded Corners */
-    border-radius: 30px; 
-    
-    /* Translucent/Glassmorphism Effect */
-    background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
-    backdrop-filter: blur(15px);          /* Blurs what's behind the button */
-    -webkit-backdrop-filter: blur(15px);  /* For Safari support */
-    
-    /* Border to make the edge pop */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    
-    /* Layout */
-    
-display: flex;
-    justify-content: center;
-    align-items:center;
-    text-decoration: none;
     color: white;
-    font-size: 20px;
+    border-radius: 50px;
+    border-color: rgb(3, 103, 20);  
+    height: 50px; 
+    margin-left: 700px;   
+}
+.topbutton:hover{
+    background-color: rgb(135, 234, 117);
+    color: black;
     font-weight: bold;
-    
-    /* Smooth transition for interaction */
-    transition: all 0.3s ease;
 }
-
-/* Add a nice hover effect */
-.glass-button2:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
-    font-weight: bold;
-    font-size: 52px;
-    color: rgb(170, 107, 228);
-}
-.projectbuttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   flex-direction: row;
-   gap: -10px;
-}
-
-
-       
-
     </style>
 </head>
 
@@ -332,10 +386,10 @@ display: flex;
         <br>
         <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
             Worked as a CSR Agent, providing excellent customer service and resolving client inquiries efficiently.
-        
 
 
-        <b>Duration:</b> 6 months
+
+            <b>Duration:</b> 6 months
         </p>
         <br>
         <h2 class="fade-in-element" style="font-size: 50px;"><u><u>Verification Officer</u></u></h2>
@@ -351,7 +405,7 @@ display: flex;
         </p>
         <b>Duration:</b> 4 months
         </p>
-        <br>
+        <br><br><br>
         <h2 align="center" class="fade-in-element">
             <span id="element3"> </span>
         </h2>
@@ -372,34 +426,77 @@ display: flex;
             administrative tasks and data analysis. Expert in creating professional documents, sophisticated
             spreadsheets, and engaging presentations, with a strong focus on technical accuracy and time management.
         </p>
-        
+
 
         <section id="projects" style="height: 50vh;">
-<br><br><br>
-  <hr class="fade-in-element" style="border: 2px solid #f2f3f3; margin:40px">
-<p align="center" class="fade-in-element" style="font-size: 60px;"><b>Projects</b></p>
-<br>
-<p align="center" class="fade-in-element" style="font-size: 20px;">
-    These are the projects that I have done so far. You can click on the buttons below to see the projects.
-</p>
-<div class="projectbuttons">
-    <span class="glass-button1">Project 1</span>
-    <span class="glass-button2">Project 2</span>
-    <span class="glass-button2">Project 3</span>
-</div>
+            <br><br><br>
+            <hr class="fade-in-element" style="border: 2px solid #f2f3f3; margin:40px">
+            <p align="center" class="fade-in-element" style="font-size: 60px;"><b>Projects</b></p>
+            <br>
+            <p align="center" class="fade-in-element" style="font-size: 20px;">
+                These are the projects that I have done so far. You can click on the buttons below to see the projects.
+            </p>
+            </section>
+            <div class="projectbuttons">
+                <span class="glass-button1">Project 1</span>
+                <span class="glass-button2">Project 2</span>
+                <span class="glass-button2">Project 3</span>
+                <span class="glass-button2">Project 4</span>
+                <span class="glass-button2">Project 5</span>
+                <span class="glass-button2">Project 6</span>
+                <span class="glass-button2">Project 7</span>
+
+            </div>
+        
+<br><br><br><br><br><br><br><br>
+        <section id="contact" class="contact2"  style="height: 50vh;">
+            <hr id = "contact" class="fade-in-element" style="border: 2px solid #f2f3f3; margin:40px">
+            <br><br><br><br><br><br><br><br>
+            <p align="center" class="fade-in-element" style="font-size: 60px;"><b>Contact</b></p>
+            <br>
+            <p  align="center" class="fade-in-element" style="font-size: 20px; ">
+                You can contact me via email or phone. You can also find me on social media.
+            </p>
+            <p  align="center" class="fade-in-element"style="font-size: 20px; hieght: 50vh;">
+                You can click on the icons to reach out to me.
+            </p>
+            </section >
+            <br><br><br><br>
+       <a href="https://www.instagram.com/haddi._.ahsan" class="instagram-link" target="_blank">
+        <i  class="fab fa-instagram"><br></i>
+    </a>
+   <a href="https://github.com/haddi1016" class="github-link" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+
+   <a href="https://www.facebook.com/haddi.ahsan.18" class="social-icon facebook" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+</a>
+<p style="font-size: 30px;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Instagram 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;
+           &nbsp;Github
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Facebook
+    </p>
+    <br><br><br>
+    <a href="#home">
+        <button type="button" class="topbutton" align="center">Back To Top</button>
+    </a>
+<br><br>
+    <footer>
+        <p style="text-align: center; font-size: 20px; color: gray;">&copy; 2024 Haddi's Portfolio. All rights reserved.</p>
+
+        
 
 
 
 
 
 
-
-
-
-
-
-        </section>
-        <section id="contact" style="height: 50vh;"></section>
     </main>
 
     <script>
@@ -439,7 +536,7 @@ display: flex;
             loop: true
         });
     </script>
-        <!-- experience script -->
+    <!-- experience script -->
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element2', {
@@ -490,30 +587,30 @@ display: flex;
         }).go();
     </script>
     <!-- active tabs -->
-<script>
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.homeb');
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.homeb');
 
-    window.addEventListener('scroll', () => {
-        let current = "";
-        
-        sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            // Check if user has scrolled past the section
-            if (pageYOffset >= sectionTop - 150) { 
-                current = section.getAttribute("id");
-            }
-        });
+        window.addEventListener('scroll', () => {
+            let current = "";
 
-        navLinks.forEach((a) => {
-            a.classList.remove("active");
-            // Match the href attribute of the button to the section ID
-            if (a.parentElement.getAttribute("href") === "#" + current) {
-                a.classList.add("active");
-            }
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                // Check if user has scrolled past the section
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((a) => {
+                a.classList.remove("active");
+                // Match the href attribute of the button to the section ID
+                if (a.parentElement.getAttribute("href") === "#" + current) {
+                    a.classList.add("active");
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
