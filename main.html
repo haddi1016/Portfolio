@@ -31,19 +31,19 @@
             justify-content: space-around;
             align-items: center;
             height: 65px;
-            
+
             /* Glassmorphism Effect */
             background-color: rgba(1, 6, 40, 0.6);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            
+
             /* Shapes and Positioning */
-            border-radius: 80px;
+            border-radius: 65px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             position: fixed;
             top: 15px;
-            left: 20px;
-            right: 20px;
+            left: 25%;
+            right: 25%;
             z-index: 1000;
         }
 
@@ -63,7 +63,8 @@
         }
 
         main {
-            padding-top: 80px; /* Adjusted to account for floating nav */
+            padding-top: 80px;
+            /* Adjusted to account for floating nav */
         }
 
         .firstsection {
@@ -112,9 +113,39 @@
             box-shadow: 0 4px 10px rgba(170, 107, 228, 0.3);
         }
 
+.homeb.active {
+    background-color: rgb(170, 107, 228);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(170, 107, 228, 0.3);
+}
+
+
         #element {
             color: rgb(170, 107, 228);
             font-weight: bold;
+        }
+
+        #element1 {
+            color: rgb(243, 242, 244);
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+
+        #element2 {
+            color: rgb(243, 242, 244);
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        #element3 {
+            color: rgb(243, 242, 244);
+            font-weight: bold;
+            font-size: 60px;
+
+
+
         }
 
         .secondsection {
@@ -125,12 +156,103 @@
 
         .fade-in-element {
             opacity: 0;
-            transition: opacity 2s ease-out;
+            transition: opacity 2.8s ease-out;
         }
 
         .fade-in-element.is-visible {
             opacity: 1;
         }
+
+        .glass-button1 {
+    /* Large Square Size */
+    width: 300px;
+    height: 200px;
+    margin: 120px;
+    
+    /* Rounded Corners */
+    border-radius: 30px; 
+    
+    /* Translucent/Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+    backdrop-filter: blur(15px);          /* Blurs what's behind the button */
+    -webkit-backdrop-filter: blur(15px);  /* For Safari support */
+    
+    /* Border to make the edge pop */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    /* Smooth transition for interaction */
+    transition: all 0.3s ease;
+}
+
+/* Add a nice hover effect */
+.glass-button1:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    font-weight: bold;
+    font-size: 52px;
+    color: rgb(170, 107, 228);
+}
+ .glass-button2 {
+    /* Large Square Size */
+    width: 300px;
+    height: 200px;
+    margin: 120px;
+    
+    /* Rounded Corners */
+    border-radius: 30px; 
+    
+    /* Translucent/Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+    backdrop-filter: blur(15px);          /* Blurs what's behind the button */
+    -webkit-backdrop-filter: blur(15px);  /* For Safari support */
+    
+    /* Border to make the edge pop */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* Layout */
+    
+display: flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    /* Smooth transition for interaction */
+    transition: all 0.3s ease;
+}
+
+/* Add a nice hover effect */
+.glass-button2:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    font-weight: bold;
+    font-size: 52px;
+    color: rgb(170, 107, 228);
+}
+.projectbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: row;
+   gap: -10px;
+}
+
+
+       
+
     </style>
 </head>
 
@@ -156,47 +278,127 @@
                 <br><br>
                 I am a passionate <span class="name">Web Developer</span>
                 <br><br>
-                Welcome to my Portfolio where you can explore my projects and learn more about my skills and experience in
+                Welcome to my Portfolio where you can explore my projects and learn more about my skills and experience
+                in
                 <br>
                 <span id="element"></span>
             </div>
-            <div class="rightsection" >
+            <div class="rightsection">
                 <img src="Screenshot (120).png" alt="Profile Picture">
             </div>
         </section>
 
         <section class="secondsection" id="about">
             <hr style="border: 2px solid #f2f3f3; margin:40px">
-            <p class="fade-in-element" style="font-weight: normal; font-size: 25px; color:gray">&nbsp;What I Have done so far</p>
-            <h1  class="fade-in-element">Qualification</h1>
+            <p class="fade-in-element" style="font-weight: normal; font-size: 25px; color:gray">&nbsp;What I Have done
+                so far</p>
+            <h1 class="fade-in-element" id="callback"></h1>
             <br>
-            <h2 align="center" class="fade-in-element"><u>Education</u></h2>
+            <h2 align="center" class="fade-in-element"><span id="element1"></span></h2>
             <h3 class="fade-in-element"><u>Matriculation</u></h3>
             <p class="fade-in-element" style="font-weight: normal; font-size: 20px; font-family: Arial, sans-serif;">
                 <b>Matriculation (Computer Science) <br> 840/1100 Marks (First Division)</b><br><br>
                 Islamabad Lyceum High School<br>
-                Successfully completed matriculation in the first attempt, demonstrating strong academic commitment and a solid foundation in core subjects.
+                Successfully completed matriculation in the first attempt, demonstrating strong academic commitment and
+                a solid foundation in core subjects.
             </p>
             <br>
             <h3 class="fade-in-element"><u>Intermediate</u></h3>
             <p class="fade-in-element" style="font-weight: normal; font-size: 20px; font-family: Arial, sans-serif;">
                 <b>Intermediate (Computer Science) <br> 700/1100 Marks (First Division)</b><br><br>
                 Punjab Group Of Colleges (PGC)<br>
-                Successfully completed intermediate in the first attempt, demonstrating strong academic commitment and a solid foundation in core subjects.
+                Successfully completed intermediate in the first attempt, demonstrating strong academic commitment and a
+                solid foundation in core subjects.
             </p>
             <br>
             <h3 class="fade-in-element"><u>Bachelor of Science in Computer Science (BSCS)</u></h3>
             <p class="fade-in-element" style="font-weight: normal; font-size: 20px; font-family: Arial, sans-serif;">
-                Currently pursuing an undergraduate degree in Computer Science at Iqra University, Islamabad, having successfully completed three semesters. Building a comprehensive foundation in software development, logical design, and networking principles.
+                <br>
+                Currently pursuing an undergraduate degree in Computer Science at Iqra University, Islamabad, having
+                successfully completed three semesters. Building a comprehensive foundation in software development,
+                logical design, and networking principles.
             </p>
             <br>
-            <h2 style="font-family: 'Roboto Condensed', sans-serif;" align="center" class="fade-in-element"><u>Experience</u></h2>
+            <h2 style="font-family: 'Roboto Condensed', sans-serif;" align="center" class="fade-in-element"><span
+                    id="element2"> </span></h2>
         </section>
         <br>
-        <h3 class="fade-in-element">CSR Agent</h3>
-        <p class="fade-in-element">Worked as a CSR Agent, providing excellent customer service and resolving client inquiries efficiently.</p>
+        <h2 class="fade-in-element" style="font-size: 50px;"><u><u>CSR Agent</u></u></h2>
+        <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+        <p class="fade-in-element" style="font-weight: bold;color: gray; ">Satellite BPO
+            <br>
+            1/3/2021 - 1/9/2021
+        </p>
+        <br>
+        <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+            Worked as a CSR Agent, providing excellent customer service and resolving client inquiries efficiently.
+        
 
-        <section id="projects" style="height: 50vh;"></section>
+
+        <b>Duration:</b> 6 months
+        </p>
+        <br>
+        <h2 class="fade-in-element" style="font-size: 50px;"><u><u>Verification Officer</u></u></h2>
+        <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+        <p class="fade-in-element" style="font-weight: bold;color: gray; ">Trinity BPO
+            <br>
+            1/2/2023 - 1/6/2023
+        </p>
+        <br>
+        <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+            Worked as a Verification Officer, ensuring data accuracy and compliance with company policies.
+            <br>
+        </p>
+        <b>Duration:</b> 4 months
+        </p>
+        <br>
+        <h2 align="center" class="fade-in-element">
+            <span id="element3"> </span>
+        </h2>
+        <p class="fade-in-element" style="font-weight: bold; font-size: 50px;"><u>Technical Skills</u>
+
+        </p>
+        <br>
+        <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+            Proficient in HTML, CSS, JavaScript, and React.js for web development. Skilled in using Git for version
+            control
+            and collaboration. Experienced in responsive design and cross-browser compatibility.
+        </p>
+        <br>
+        <h2 class="fade-in-element" style="font-size: 50px;"><u><u>MS Specialist Certification</u></u></h2>
+        <br>
+        <p class="fade-in-element" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">
+            Certified Microsoft Office Specialist (Word, Excel, PowerPoint) with a proven ability to manage complex
+            administrative tasks and data analysis. Expert in creating professional documents, sophisticated
+            spreadsheets, and engaging presentations, with a strong focus on technical accuracy and time management.
+        </p>
+        
+
+        <section id="projects" style="height: 50vh;">
+<br><br><br>
+  <hr class="fade-in-element" style="border: 2px solid #f2f3f3; margin:40px">
+<p align="center" class="fade-in-element" style="font-size: 60px;"><b>Projects</b></p>
+<br>
+<p align="center" class="fade-in-element" style="font-size: 20px;">
+    These are the projects that I have done so far. You can click on the buttons below to see the projects.
+</p>
+<div class="projectbuttons">
+    <span class="glass-button1">Project 1</span>
+    <span class="glass-button2">Project 2</span>
+    <span class="glass-button2">Project 3</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        </section>
         <section id="contact" style="height: 50vh;"></section>
     </main>
 
@@ -222,6 +424,96 @@
             typeSpeed: 50,
         });
     </script>
+
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element1', {
+            strings: [
+                '<span style="color: #AA6BE4;">Education</span>',
+                '<span style="color: #FF5733;">Education</span>',
+                '<span style="color: #33FF57;">Education</span>',
+                '<span style="color: #33A1FF;">Education</span>'
+            ],
+            typeSpeed: 40,
+            loop: true
+        });
+    </script>
+        <!-- experience script -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element2', {
+            strings: [
+                '<span style="color: #AA6BE4;">Experience</span>',
+                '<span style="color: #FF5733;">Experience</span>',
+                '<span style="color: #33FF57;">Experience</span>',
+                '<span style="color: #33A1FF;">Experience</span>'
+            ],
+            typeSpeed: 40,
+            loop: true // Optional: added for better visibility
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element3', {
+            strings: [
+                '<span style="color: #AA6BE4;">Skills</span>',
+                '<span style="color: #FF5733;">Skills</span>',
+                '<span style="color: #33FF57;">Skills</span>',
+                '<span style="color: #33A1FF;">Skills</span>'
+            ],
+            typeSpeed: 40,
+
+            loop: true // Optional: added for better visibility
+        });
+    </script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+        // Helper function to generate a random color
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // qualification script
+        new TypeIt("#callback", {
+            strings: ["Qualification"],
+            cursor: false,
+            afterStep: function (instance) {
+                instance.getElement().style.color = getRandomColor();
+
+            },
+        }).go();
+    </script>
+    <!-- active tabs -->
+<script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.homeb');
+
+    window.addEventListener('scroll', () => {
+        let current = "";
+        
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            // Check if user has scrolled past the section
+            if (pageYOffset >= sectionTop - 150) { 
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach((a) => {
+            a.classList.remove("active");
+            // Match the href attribute of the button to the section ID
+            if (a.parentElement.getAttribute("href") === "#" + current) {
+                a.classList.add("active");
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
