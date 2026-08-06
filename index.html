@@ -228,8 +228,9 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
             font-weight: bold;
-            font-size: 52px;
+            font-size: 40px;
             color: rgb(170, 107, 228);
+            width: 400px;
         }
 
         .glass-button2 {
@@ -264,6 +265,9 @@
 
             /* Smooth transition for interaction */
             transition: all 0.3s ease;
+            
+
+            
         }
 
         /* Add a nice hover effect */
@@ -272,8 +276,10 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
             transform: scale(1.05);
             font-weight: bold;
-            font-size: 52px;
+            font-size: 35px;
             color: rgb(170, 107, 228);
+            width: 400px;
+
         }
 
         .projectbuttons {
@@ -306,6 +312,14 @@
     background-color: rgb(135, 234, 117);
     color: black;
     font-weight: bold;
+}
+.project1link {
+    text-decoration: none; /* Remove underline */
+}
+.music-icon {
+    margin-right: 10px; /* Space between icon and text */
+    align-items: center; /* Center the icon vertically */
+
 }
     </style>
 </head>
@@ -438,8 +452,12 @@
             </p>
             </section>
             <div class="projectbuttons">
-                <span class="glass-button1">Project 1</span>
-                <span class="glass-button2">Project 2</span>
+                <a href="https://musicplayerclone8626.netlify.app/" target="_blank" class="project1link">
+                    <span class="glass-button1"><i class="fa-solid fa-music" ></i>&nbsp; Music Player Clone</span>
+                </a>
+                <a href="https://studentrecordsystemproject.netlify.app/" target="_blank" class="project1link">
+                    <span class="glass-button2"><i class="fa-solid fa-user-graduate" ></i>&nbsp; Student Record System</span>
+                </a>
                 <span class="glass-button2">Project 3</span>
                 <span class="glass-button2">Project 4</span>
                 <span class="glass-button2">Project 5</span>
@@ -611,6 +629,8 @@
             });
         });
     </script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
